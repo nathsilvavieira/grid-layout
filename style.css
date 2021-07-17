@@ -1,0 +1,31 @@
+.grid{
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr); /*repete 12 vezes a fracao*/
+    grid-template-rows: 150px 300px 150px; 
+}
+.grid *{ /*Puxa todas tags dentro do grid*/
+    text-align: center;
+    /*place-items: center; para alinhar texto no centro*/
+}
+header{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    /*grid-colum: 1/13 abrevia comandos de acima*/
+    background-color: cadetblue;
+}
+main{
+display: grid;
+grid-column: 1/13; 
+grid-template-columns: 1fr 1fr;
+}
+main .menu{
+    background-color: darkkhaki;
+}
+main .content{
+    background-color: darkslategray;
+}
+footer{
+    background-color: cyan;
+    grid-column: 1/13;
+}
